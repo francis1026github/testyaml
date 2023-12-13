@@ -13,4 +13,6 @@ jobs:
           username: ${{ secrets.SSH_USERNAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: ${{ secrets.SSH_PORT }}
-          script: ls -al
+          script: |
+            ls -al
+            cd "/container/application"
