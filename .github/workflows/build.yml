@@ -14,5 +14,5 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: ${{ secrets.SSH_PORT }}
           script: |
-            cd "/container/application"
             ls -al
+            cd "/container/application"
