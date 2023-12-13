@@ -15,3 +15,4 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           script: |
             cd /container/application
+            ls -al
