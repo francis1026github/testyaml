@@ -14,5 +14,5 @@ jobs:
           key: ${{ secrets.TESTSITEHOST_PRIVATE_KEY }}
           port: ${{ secrets.TESTSITEHOST_PORT }}
           script: "
-            ls -al
+            ls -a
             "
