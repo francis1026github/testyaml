@@ -9,11 +9,11 @@ jobs:
       - name: multiple command
         uses: appleboy/ssh-action@v1.0.0
         with:
-          host: ${{ secrets.TESTSITEHOST_HOST }}
-          username: ${{ secrets.TESTSITEHOST_USERNAME }}
-          key: ${{ secrets.TESTSITEHOST_PRIVATE_KEY }}
-          port: ${{ secrets.TESTSITEHOST_PORT }}
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: ${{ secrets.SSH_PORT }}
           script: "
             ls -al &&
-            cd /container/application/testyaml/
+            cd /container/application/gitdirectory/ &&
             "
