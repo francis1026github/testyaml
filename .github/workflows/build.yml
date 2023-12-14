@@ -15,5 +15,5 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           script: "
             ls -al &&
-            cd /container/application/gitdirectory/
+            cd /container/application/gitdirectory
             "
