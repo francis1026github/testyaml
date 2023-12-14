@@ -15,6 +15,6 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           script: "
             ls -al &&
-            cd /container/application/gitdirectory/testyaml &&
+            cd /container/application/gitdirectory/testyaml/ &&
             git pull origin
             "
