@@ -15,6 +15,5 @@ jobs:
           port: ${{ secrets.TESTSITEHOST_PORT }}
           script: "
             ls -al &&
-            cd /container/application/testyaml &&
-            git pull origin
+            cd /container/application/testyaml
             "
